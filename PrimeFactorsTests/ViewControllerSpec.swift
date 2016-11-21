@@ -5,25 +5,25 @@ import PrimeFactors
 class ViewControllerSpec: QuickSpec {
     override func spec() {
 
-        var primes: UILabel!
+        var primesLabel: UILabel!
         var controller: ViewController!
         var numberInput: UITextField!
 
         beforeEach {
-            primes = UILabel()
+            primesLabel = UILabel()
             controller = ViewController()
-            controller.primes = primes
+            controller.primesLabel = primesLabel
             numberInput = UITextField()
             controller.numberToFactorTextField = numberInput
         }
 
         describe("Loading the view") {
             it("clears the current primes") {
-                primes.text = "Original text"
+                primesLabel.text = "Original text"
 
                 controller.viewDidLoad()
 
-                expect(primes.text).to(equal(""))
+                expect(primesLabel.text).to(equal(""))
             }
         }
 
@@ -33,7 +33,7 @@ class ViewControllerSpec: QuickSpec {
 
                 controller.generatePrimes()
 
-                expect(primes.text).to(equal("2, 2, 3, 5"))
+                expect(primesLabel.text).to(equal("2, 2, 3, 5"))
             }
 
             it("shows an error when the input is not a number") {
@@ -41,7 +41,7 @@ class ViewControllerSpec: QuickSpec {
 
                 controller.generatePrimes()
 
-                expect(primes.text).to(equal("Please enter a number"))
+                expect(primesLabel.text).to(equal("Please enter a number"))
             }
         }
     }
