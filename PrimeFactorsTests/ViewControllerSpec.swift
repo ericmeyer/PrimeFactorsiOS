@@ -5,12 +5,21 @@ import PrimeFactors
 class ViewControllerSpec: QuickSpec {
     override func spec() {
 
+        var primes: UILabel!
+        var controller: ViewController!
+        var numberInput: UITextField!
+
+        beforeEach {
+            primes = UILabel()
+            controller = ViewController()
+            controller.primes = primes
+            numberInput = UITextField()
+            controller.numberToFactorTextField = numberInput
+        }
+
         describe("Loading the view") {
             it("clears the current primes") {
-                let primes = UILabel()
                 primes.text = "Original text"
-                let controller = ViewController()
-                controller.primes = primes
 
                 controller.viewDidLoad()
 
@@ -20,11 +29,6 @@ class ViewControllerSpec: QuickSpec {
 
         describe("Generating prime factors") {
             it("displays the results in a label") {
-                let primes = UILabel()
-                let numberInput = UITextField()
-                let controller = ViewController()
-                controller.primes = primes
-                controller.numberToFactorTextField = numberInput
                 numberInput.text = "\(2*2*3*5)"
 
                 controller.generatePrimes()
@@ -33,11 +37,6 @@ class ViewControllerSpec: QuickSpec {
             }
 
             it("shows an error when the input is not a number") {
-                let primes = UILabel()
-                let numberInput = UITextField()
-                let controller = ViewController()
-                controller.primes = primes
-                controller.numberToFactorTextField = numberInput
                 numberInput.text = "ABC"
 
                 controller.generatePrimes()
