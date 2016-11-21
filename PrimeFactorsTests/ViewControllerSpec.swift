@@ -31,6 +31,19 @@ class ViewControllerSpec: QuickSpec {
 
                 expect(primes.text).to(equal("2, 2, 3, 5"))
             }
+
+            it("shows an error when the input is not a number") {
+                let primes = UILabel()
+                let numberInput = UITextField()
+                let controller = ViewController()
+                controller.primes = primes
+                controller.numberToFactorTextField = numberInput
+                numberInput.text = "ABC"
+
+                controller.generatePrimes()
+
+                expect(primes.text).to(equal("Please enter a number"))
+            }
         }
     }
 }

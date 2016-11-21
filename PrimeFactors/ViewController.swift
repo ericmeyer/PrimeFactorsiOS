@@ -13,6 +13,8 @@ public class ViewController: UIViewController {
     @IBAction public func generatePrimes() {
         if let number: Int = Int(numberToFactorTextField.text!) {
             primes.text = PrimeFactors.generate(number: number).map { "\($0)" }.joined(separator: ", ")
+        } else {
+            primes.text = "Please enter a number"
         }
     }
 
