@@ -29,6 +29,7 @@ class PrimesViewControllerSpec: QuickSpec {
 
         describe("Generating prime factors") {
             it("displays the results in a label") {
+                controller.viewDidLoad()
                 numberInput.text = "\(2*2*3*5)"
 
                 controller.generatePrimes()
@@ -37,6 +38,7 @@ class PrimesViewControllerSpec: QuickSpec {
             }
 
             it("shows an error when the input is not a number") {
+                controller.viewDidLoad()
                 numberInput.text = "ABC"
 
                 controller.generatePrimes()
