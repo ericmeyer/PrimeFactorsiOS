@@ -41,7 +41,7 @@ class ViewControllerSpec: QuickSpec {
 
                 controller.generatePrimes()
 
-                expect(primesLabel.text).to(equal("Please enter a number"))
+                expect(primesLabel.text).to(equal("\"ABC\" is not a number"))
             }
         }
     }

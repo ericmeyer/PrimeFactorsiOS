@@ -14,7 +14,7 @@ public class ViewController: UIViewController {
         if let number: Int = Int(numberToFactorTextField.text!) {
             primesLabel.text = PrimeFactors.generate(number: number).map { "\($0)" }.joined(separator: ", ")
         } else {
-            primesLabel.text = "Please enter a number"
+            primesLabel.text = "\"\(numberToFactorTextField.text!)\" is not a number"
         }
     }
 
