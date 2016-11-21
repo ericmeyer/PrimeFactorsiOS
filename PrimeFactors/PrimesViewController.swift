@@ -1,6 +1,6 @@
 import UIKit
 
-public class ViewController: UIViewController {
+public class PrimesViewController: UIViewController {
 
     @IBOutlet weak public var numberToFactorTextField: UITextField!
     @IBOutlet weak public var primesLabel: UILabel!

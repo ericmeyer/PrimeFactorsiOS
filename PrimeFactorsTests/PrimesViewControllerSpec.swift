@@ -2,16 +2,16 @@ import Quick
 import Nimble
 import PrimeFactors
 
-class ViewControllerSpec: QuickSpec {
+class PrimesViewControllerSpec: QuickSpec {
     override func spec() {
 
         var primesLabel: UILabel!
-        var controller: ViewController!
+        var controller: PrimesViewController!
         var numberInput: UITextField!
 
         beforeEach {
             primesLabel = UILabel()
-            controller = ViewController()
+            controller = PrimesViewController()
             controller.primesLabel = primesLabel
             numberInput = UITextField()
             controller.numberToFactorTextField = numberInput

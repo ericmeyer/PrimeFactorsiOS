@@ -10,9 +10,9 @@
 		07172AF81CB8394000759807 /* FooSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07172AF71CB8394000759807 /* FooSpec.swift */; };
 		07172AFA1CB83A6400759807 /* PrimeFactorsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07172AF91CB83A6400759807 /* PrimeFactorsSpec.swift */; };
 		07172AFC1CB83B0700759807 /* PrimeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07172AFB1CB83B0700759807 /* PrimeFactors.swift */; };
-		07B9A49F1CB848AB00BBDC1A /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9A49E1CB848AB00BBDC1A /* ViewControllerSpec.swift */; };
+		07B9A49F1CB848AB00BBDC1A /* PrimesViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9A49E1CB848AB00BBDC1A /* PrimesViewControllerSpec.swift */; };
 		07CD45751CB8354700CDAEC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD45741CB8354700CDAEC8 /* AppDelegate.swift */; };
-		07CD45771CB8354700CDAEC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD45761CB8354700CDAEC8 /* ViewController.swift */; };
+		07CD45771CB8354700CDAEC8 /* PrimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD45761CB8354700CDAEC8 /* PrimesViewController.swift */; };
 		07CD457A1CB8354700CDAEC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CD45781CB8354700CDAEC8 /* Main.storyboard */; };
 		07CD457C1CB8354700CDAEC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07CD457B1CB8354700CDAEC8 /* Assets.xcassets */; };
 		07CD457F1CB8354700CDAEC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CD457D1CB8354700CDAEC8 /* LaunchScreen.storyboard */; };
@@ -33,10 +33,10 @@
 		07172AF71CB8394000759807 /* FooSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooSpec.swift; sourceTree = "<group>"; };
 		07172AF91CB83A6400759807 /* PrimeFactorsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeFactorsSpec.swift; sourceTree = "<group>"; };
 		07172AFB1CB83B0700759807 /* PrimeFactors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeFactors.swift; sourceTree = "<group>"; };
-		07B9A49E1CB848AB00BBDC1A /* ViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
+		07B9A49E1CB848AB00BBDC1A /* PrimesViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimesViewControllerSpec.swift; sourceTree = "<group>"; };
 		07CD45711CB8354700CDAEC8 /* PrimeFactors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeFactors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CD45741CB8354700CDAEC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07CD45761CB8354700CDAEC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07CD45761CB8354700CDAEC8 /* PrimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimesViewController.swift; sourceTree = "<group>"; };
 		07CD45791CB8354700CDAEC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07CD457B1CB8354700CDAEC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07CD457E1CB8354700CDAEC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				07CD45741CB8354700CDAEC8 /* AppDelegate.swift */,
-				07CD45761CB8354700CDAEC8 /* ViewController.swift */,
+				07CD45761CB8354700CDAEC8 /* PrimesViewController.swift */,
 				07CD45781CB8354700CDAEC8 /* Main.storyboard */,
 				07CD457B1CB8354700CDAEC8 /* Assets.xcassets */,
 				07CD457D1CB8354700CDAEC8 /* LaunchScreen.storyboard */,
@@ -107,7 +107,7 @@
 				07CD458B1CB8354700CDAEC8 /* Info.plist */,
 				07172AF71CB8394000759807 /* FooSpec.swift */,
 				07172AF91CB83A6400759807 /* PrimeFactorsSpec.swift */,
-				07B9A49E1CB848AB00BBDC1A /* ViewControllerSpec.swift */,
+				07B9A49E1CB848AB00BBDC1A /* PrimesViewControllerSpec.swift */,
 			);
 			path = PrimeFactorsTests;
 			sourceTree = "<group>";
@@ -285,7 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07CD45771CB8354700CDAEC8 /* ViewController.swift in Sources */,
+				07CD45771CB8354700CDAEC8 /* PrimesViewController.swift in Sources */,
 				07172AFC1CB83B0700759807 /* PrimeFactors.swift in Sources */,
 				07CD45751CB8354700CDAEC8 /* AppDelegate.swift in Sources */,
 			);
@@ -295,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07B9A49F1CB848AB00BBDC1A /* ViewControllerSpec.swift in Sources */,
+				07B9A49F1CB848AB00BBDC1A /* PrimesViewControllerSpec.swift in Sources */,
 				07172AF81CB8394000759807 /* FooSpec.swift in Sources */,
 				07172AFA1CB83A6400759807 /* PrimeFactorsSpec.swift in Sources */,
 			);
