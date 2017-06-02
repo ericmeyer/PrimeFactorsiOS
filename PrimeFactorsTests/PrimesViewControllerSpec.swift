@@ -5,14 +5,14 @@ import PrimeFactors
 class PrimesViewControllerSpec: QuickSpec {
     override func spec() {
 
-        var primesLabel: UILabel!
+        var primesLabel: PrimesLabel!
         var controller: PrimesViewController!
         var numberInput: UITextField!
 
         beforeEach {
-            primesLabel = UILabel()
+            primesLabel = PrimesLabel()
             controller = PrimesViewController()
-            controller.primesLabel = primesLabel
+            controller.primesView = primesLabel
             numberInput = UITextField()
             controller.numberToFactorTextField = numberInput
         }

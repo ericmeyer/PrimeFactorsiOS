@@ -36,7 +36,7 @@
                                     <action selector="generatePrimes" destination="BYZ-38-t0r" eventType="editingChanged" id="gqh-66-lSc"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yet-W3-bdA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yet-W3-bdA" customClass="PrimesLabel" customModule="PrimeFactors" customModuleProvider="target">
                                 <rect key="frame" x="16" y="86.5" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -57,7 +57,7 @@
                     </view>
                     <connections>
                         <outlet property="numberToFactorTextField" destination="seF-ey-qYS" id="7SS-nw-oPe"/>
-                        <outlet property="primesLabel" destination="yet-W3-bdA" id="iMg-Re-O2Q"/>
+                        <outlet property="primesView" destination="yet-W3-bdA" id="wph-Qh-Cfy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
